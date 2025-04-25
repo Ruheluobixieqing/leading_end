@@ -36,9 +36,8 @@
     <a href="https://www.baidu.com" target="_blank" id="italic_hyperlink">百度</a>
     <abbr title="Large Language Model"><i>LLM</i></abbr>
     <hr/>
-    <form>
-        <button type="button" onclick="alert('Hello,Bolide!')">每日签到</button>
-    </form>
+    <button id = "dataButton" onclick = 'alert("Hello,Bolide!")'>每日签到</button>
+    <br/>
     <br/>
     <p style="font-family:'Microsoft JhengHei'">
         在一片古老而神秘的森林深处，隐藏着一个被世人遗忘的村落。这里四季如春，阳光透过茂密的树叶洒下斑驳的光影，仿佛是大自然精心绘制的画卷。
@@ -112,9 +111,15 @@
     </table>
     <br/>
     <form>
-        First name:<input type = "text" name = "firstname">
+        First name:<br/>
+        <input type = "text" name = "firstname"/>
         <br />
-        Last name:<input type = "text" name = "lastname">
+        Last name:<br/>
+        <input type = "text" name = "lastname"/>
+        <br/>
+        Password:<br/>
+        <input type = "password" name = "password"/>
+        <br>
     </form>
     <form>
         <fieldset>
@@ -132,6 +137,14 @@
         <option value = "MCLAREN" selected>MCLAREN</option>
     </select>
     </form>
+    <br/>
+    <form>
+        <input type = "checkbox" name = "vehicle" value = "car1"/>car1<br/>
+        <input type = "checkbox" name = "vehicle" value = "car2"/>car2<br/>
+        <input type = "checkbox" name = "vehicle" value = "car3"/>car3<br/>
+        <input type = "checkbox" name = "vehicle" value = "car4"/>car4<br/>
+    </form>
+    <br/>
     <form>
         <textarea name="message" rows="5" cols="30">
         The cat was playing in the garden.
@@ -140,9 +153,23 @@
         <input type = "submit" value = "提交建议" />
     </form>
     <br/>
+    <form>
+        选择你的载具
+        <br/>
+        <input list = "browsers">
+        <datalist id = "browsers">
+            <option value = "玻璃龙">
+            <option value = "肥龙">
+            <option value = "黑龙">
+            <option value = "白龙">
+            <option value = "风龙">
+        </datalist>
+        <input type = "submit" value = "submit"/>
+    </form>
     <address>
         Writen by Bolide
     </address>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
